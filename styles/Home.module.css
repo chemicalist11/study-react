@@ -37,6 +37,7 @@
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
+  text-transform: none;
 }
 
 .grid {
@@ -97,7 +98,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +126,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -149,6 +150,10 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+}
+
+.title {
+  text-transform: capitalize;
 }
 
 /* Enable hover only on non-touch devices */
