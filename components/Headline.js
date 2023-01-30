@@ -4,8 +4,7 @@ export function Headline(props) {
   return (
     <div>
       <p className={styles.title}>
-        {props.page} page&nbsp;
-        <code className={styles.code}>pages/{props.page}.js</code>
+        {props.page} page {props.children}
       </p>
     </div>
   );
