@@ -1,9 +1,9 @@
-import styles from "@/styles/Home.module.css";
+import classes from "@/components/Headline.module.css";
 
 export function Headline(props) {
   return (
     <div>
-      <p className={styles.title}>
+      <p className={classes.title}>
         {props.page} page {props.children}
       </p>
     </div>
