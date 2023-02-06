@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on",
+  "explorer.compactFolders": false,
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 10,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnPaste": true,
+  "editor.accessibilitySupport": "on",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.sortOrder": "type"
+}
