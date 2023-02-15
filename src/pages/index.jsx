@@ -1,9 +1,15 @@
 import Head from "next/head";
 import { Main } from "src/components/Main";
 import { Header } from "src/components/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount((count) => count + 1);
+  };
+
   useEffect(() => {
     document.body.style.backgroundColor = "lightblue";
     return () => {
@@ -17,6 +23,8 @@ export default function Home() {
         <title>Index Page</title>
       </Head>
       <Header />
+      <h1>{count}</h1>
+      <button onClick={handleClick}>ボタン</button>
       <Main page="index" />
     </>
   );
